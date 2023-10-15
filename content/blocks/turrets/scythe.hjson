@@ -1,0 +1,58 @@
+type: PowerTurret
+name: Scythe
+description: Fires energy bolts over great distances at enemy ground forces, dealing area damage.
+  targetAir: false
+  size: 4
+  health: 2880
+  range: 608
+  consumes: {
+power: 10
+  }
+reload: 70
+  shootType: {
+type: BasicBulletType
+  hittable: false
+  width: 20
+  height: 35
+  damage: 450
+  speed: 10
+  lifetime: 81
+  pierce: true
+  pierceCap: 11
+  splashDamage: 350
+  splashDamageRadius: 32
+  scaledSplashDamage: true
+  hitEffect: {
+  type: MultiEffect
+    effects: [
+    {
+      type: ExplosionEffect
+        waveRad: 32
+        smokes: 6
+        sparks: 11
+sparkColor: E3AF6F
+        }
+{
+type: ParticleEffect
+particles: 7
+line: true
+colorFrom: F7E97E
+colorTo: D67B65
+}
+{
+type: ParticleEffect
+colorFrom: 262626
+colorTo: 424242
+}
+    ]
+}
+}
+requirements: [
+  lead/1000
+  silicon/600
+  titanium/500
+  plastanium/500
+  surge-alloy/280
+  ]
+  category: turret
+research: lancer
