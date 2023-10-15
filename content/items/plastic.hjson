@@ -1,0 +1,6 @@
+type: material
+  name: Plastic
+  description: Polymer used in advanced construction.
+  details: Structurally weak unless reinforced.
+  cost: 1.1
+  research: titanium
